@@ -12,6 +12,7 @@ public class healthbarscript : MonoBehaviour
     {
         slider.maxValue = health;
         slider.value = health;
+        //never finished this
     }
     public void SetHealth(int health)
     {

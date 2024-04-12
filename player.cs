@@ -50,6 +50,7 @@ public class Player : MonoBehaviour
             }
             RigidBodyComponent.AddForce(Vector3.up * JumpPower, ForceMode.VelocityChange);
             JumpKeyWasPressed = false;
+            //made u double jump
         }
 
 

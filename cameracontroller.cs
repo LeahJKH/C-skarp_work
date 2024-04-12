@@ -23,6 +23,7 @@ public class CameraLook : MonoBehaviour
     {
         rotY += Input.GetAxis("Mouse X") * sensitivity;
         rotX += Input.GetAxis("Mouse Y") * sensitivity;
+        //gets x y posistions of mouse
 
         rotX = Mathf.Clamp(rotX, minX, maxX);
 
@@ -34,12 +35,14 @@ public class CameraLook : MonoBehaviour
             //Mistake happened here vvvv
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            //should lock cursor
         }
 
         if (Cursor.visible && Input.GetMouseButtonDown(1))
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+            //removes cursor from view
         }
     }
 }

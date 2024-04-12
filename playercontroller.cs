@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+//remember too put player on player tag
 public class playercontroller : MonoBehaviour
 {
 
